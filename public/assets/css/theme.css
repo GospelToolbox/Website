@@ -1,0 +1,87 @@
+@font-face {
+font-family: 'Qlassik Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Qlassik Bold'), url('../fonts/QlassikBold_TB.woff') format('woff');
+}
+
+.navbar {
+	border-radius: 0px;
+	border: none;
+	margin-bottom: 0px;
+}
+
+.navbar-default {
+	background: none; /*-color: #233D4D; */
+}
+
+.navbar-brand {
+	height: 80px;
+}
+
+.navbar-brand > img { 
+	margin-top: -15px;
+	display: inline-block;
+	height: 50px;
+
+	-webkit-filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.5));
+  	filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.5));
+}
+
+.navbar-brand > span.title {
+	font-family: 'Qlassik Bold';
+	color: #FFF;
+
+	display: inline-block;
+	line-height: 50px;
+	font-size: 2em;
+	text-shadow: 1px 1px rgba(0,0,0,0.5);
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	background: black url('../images/hero1.jpg');
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.missionstatement {
+	margin-top: 50px;
+	color: #FFFFFF;
+	font-size: 2em;
+	text-align: center;
+ 	text-shadow: 1px 1px #000000;
+ }
+
+ .fadebox {
+ 	color: white;
+ 	padding: 15px;
+ 	border-radius: 5px;
+ 	background: rgba(0, 0, 0, 0.5);
+ }
+
+ .joinbox {
+ 	background: rgba(255,255,255, 0.95);
+ 	border-radius: 5px;
+ 	padding: 15px;
+ 	margin: 15px;
+ }
+
+ .joinbox > h2 {
+ 	margin: 0px;
+ 	text-align: center;
+ }
+
+ .centered-block {
+ 	display: inline-block;
+ 	width: 100%;
+ 	text-align: center;
+ }
+
+ .logo-large {
+ 	width: 100%;
+ 	display: inline-block;
+ 	-webkit-filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.5));
+  	filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.5));
+ }

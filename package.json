@@ -1,0 +1,15 @@
+{
+  "name": "gospeltoolbox-website",
+  "version": "1.0.0",
+  "description": "Website for the Gospel Toolbox project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github/gospeltoolbox/gospeltoolbox-website.git"
+  },
+  "author": "Micah Lee <micah@micahlee.com>",
+  "license": "Apache"
+}

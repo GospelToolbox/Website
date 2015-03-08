@@ -1,0 +1,18 @@
+{
+  "name": "gospeltoolbox-website",
+  "version": "0.0.0",
+  "authors": [
+    "Micah Lee <micah@micahlee.com>"
+  ],
+  "description": "Website for the Gospel Toolbox project",
+  "license": "Apache",
+  "homepage": "http://gospelproject.org",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
