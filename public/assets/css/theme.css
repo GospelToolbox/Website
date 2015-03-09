@@ -5,6 +5,10 @@ font-weight: normal;
 src: local('Qlassik Bold'), url('../fonts/QlassikBold_TB.woff') format('woff');
 }
 
+body {
+	background: black;
+}
+
 .navbar {
 	border-radius: 0px;
 	border: none;
@@ -15,17 +19,11 @@ src: local('Qlassik Bold'), url('../fonts/QlassikBold_TB.woff') format('woff');
 	background: none; /*-color: #233D4D; */
 }
 
-.navbar-brand {
-	height: 80px;
-}
-
-.navbar-brand > img { 
-	margin-top: -15px;
-	display: inline-block;
-	height: 50px;
-
-	-webkit-filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.5));
-  	filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.5));
+.navbar-fixed {
+	position: fixed;
+	top: 0px;
+	left:0px;
+	right:0px;
 }
 
 .navbar-brand > span.title {
@@ -38,9 +36,23 @@ src: local('Qlassik Bold'), url('../fonts/QlassikBold_TB.woff') format('woff');
 	text-shadow: 1px 1px rgba(0,0,0,0.5);
 }
 
-body {
+.page {
 	height: 100%;
-	width: 100%;
+}
+
+#splash {
+	background: black url('../images/hero1.jpg');
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#getinvolved {
+	background: black url('../images/hero2.jpg');
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#contactus {
 	background: black url('../images/hero1.jpg');
 	background-size: cover;
     background-repeat: no-repeat;
@@ -62,7 +74,7 @@ body {
  }
 
  .joinbox {
- 	background: rgba(255,255,255, 0.95);
+ 	background: rgba(255,255,255, 0.9);
  	border-radius: 5px;
  	padding: 15px;
  	margin: 15px;
@@ -85,3 +97,25 @@ body {
  	-webkit-filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.5));
   	filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.5));
  }
+
+ .supporter-logo {
+ 	display: inline-block;
+ 	margin: 40px;
+ 	height: 70px;
+ }
+
+ .nav > li > a.btn-header,
+ .nav > li > a.btn-header:focus,
+ .nav > li > a.btn-header:active {
+ 	background-color: transparent;
+    color: #fff;
+    transition: all .2s;
+    border-color: #fff;
+    margin: 15px 5px;
+    padding: 5px 10px;
+ }
+
+  .nav > li > a.btn-header:hover {
+  	background-color: rgba(0,0,0, 0.2);
+    color: #fff;
+  }

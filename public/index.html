@@ -3,49 +3,72 @@
 		<title>Gospel Toolbox</title>
 		<link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/css/theme.css">
+
+		<script src="vendor/jquery/dist/jquery.min.js"></script>
+		<script>
+		$(function() {
+		  $('a[href*=#]:not([href=#])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html,body').animate({
+		          scrollTop: target.offset().top
+		        }, 500);
+		        return false;
+		      }
+		    }
+		  });
+		});
+		</script>
 	</head>
 	<body>
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-default navbar-fixed">
   			<div class="container-fluid">
-			    <!-- Brand and toggle get grouped for better mobile display -->
-			    <div class="navbar-header">
-			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-			        <span class="sr-only">Toggle navigation</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			      </button>
-			      <a class="navbar-brand" href="#">
-				        <img alt="Brand" src="assets/images/LogoColor80.png">
-				        <span class="title">Gospel Toolbox</span>
-			      </a>
-			    </div>
+		
+			<div class="navbar-header">
+			 <a class="navbar-brand" href="#splash">
+		        <img alt="Brand" src="assets/images/LogoCircleRedWhite200.png" style="height:35px">
+		      </a>
+		      </div>
+
+			    <ul class="nav navbar-nav">
+
+			        <li><a href="#getinvolved" class="btn btn-header">Get Involved</a></li>
+			        <li><a href="#contactus" class="btn btn-header">Contact Us</a></li>
+			      </ul>
+
 
  				<ul class="nav navbar-nav navbar-right">
- 					<li><a href="https://twitter.com/gospeltoolbox"><img src="assets/images/twitter.png" style="height: 30px;"></a></li>
 			        <li><a href="https://github.com/gospeltoolbox"><img src="assets/images/github.png" style="height: 30px;"></a></li>
 			      </ul>
 
 			</div>
 		</nav>
 
-		<div class="container-fluid">
-		</div>
-
-		<div class="content">
-		<div class="row">
-		<div class="col-md-4 col-md-offset-4">
-		<img src="assets/images/LogoColor800.png" class="logo-large">
-		</div>
-		</div>
-		<div class="row">
-			<div class="missionstatement col-md-8 col-md-offset-2">
-			The <strong>Gospel Toolbox</strong> exists to equip the church to more
-			effectively grow in <strong>personal discipleship</strong>, <strong>church planting</strong>, and <strong>global missions</strong> through the application of modern technology.
+		
+		<div id="splash" class="container-fluid page">
+			<div class="row" style="margin-top: 5%;">
+				<div class="col-md-4 col-md-offset-4">
+					<img src="assets/images/LogoColor800.png" class="logo-large">
+				</div>
+			</div>
+			<div class="row">
+				<div class="missionstatement col-md-8 col-md-offset-2">
+				The <strong>Gospel Toolbox</strong> exists to equip the church to more
+				effectively grow in <strong>personal discipleship</strong>, <strong>church planting</strong>, and <strong>global missions</strong> through modern app development and technology.
+				</div>
+			</div>
+			<div class="row" style="margin-top: 5%">
+				<div class="col-md-12 centered-block">
+					<a href="#getinvolved" class="btn btn-success btn-lg">Learn More</a>
+				</div>
 			</div>
 		</div>
 
-		<div class="row" style="margin-top: 50px;">
+	<div id="getinvolved" class="container-fluid page">
+		<div class="row" style="margin-top: 100px;">
 			<div class="col-md-offset-1 col-md-5" >
 				<div class="joinbox">
 				<h2>Volunteers</h2>
@@ -62,7 +85,7 @@
 				... or any number of other related fields? If so, we could use your help to equip our pastors, missionaries, and churches with the tools they need. 
 				</p>
 				<span class="centered-block">
-					<a href="#" class="btn btn-success">Sign Up</a>
+					<a href="#contactus" class="btn btn-success">Sign Up</a>
 				</span>
 				</div>
 			</div>
@@ -70,9 +93,87 @@
 			<div class=" col-md-5">
 				<div class="joinbox">
 					<h2>Church Planters and Missionaries</h2>
-			</div>
+					<span class="centered-block">
+						<a href="#contactus" class="btn btn-success">Sign Up</a>
+					</span>
+				</div>
 			</div>
 		</div>
+
+		<div class="row" style="margin-top: 50px">
+			<div class="col-md-offset-1 col-md-10">
+				<div class="joinbox">
+					<h2>Supported By</h2>
+					<div class="centered-block">
+						<a href="http://www.redemptionhillchurch.com/">
+						<img src="assets/images/rhc.png" class="supporter-logo">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="contactus" class="container-fluid page">
+		<div class="row" style="margin-top: 100px;">
+			<div class="col-md-offset-1 col-md-10">
+				<div class="joinbox">
+				<h2>Contact Us</h2>
+				
+				<form>
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Email address</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">First Name</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter First Name">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Last Name</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Last Name">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Message</label>
+				    <textarea class="form-control" placeholder="Enter a message..."></textarea>
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Join Our Mailing List...</label>
+
+				    <div class="checkbox">
+					    <label>
+					      <input type="checkbox">I want to learn more about creating apps for the Gospel Toolbox.
+					    </label>
+					  </div>
+
+					  <div class="checkbox">
+					    <label>
+					      <input type="checkbox">I want to learn more about apps for Personal Discipleship.
+					    </label>
+					  </div>
+
+					  <div class="checkbox">
+					    <label>
+					      <input type="checkbox">I want to learn more about apps for Church Planting.
+					    </label>
+					  </div>
+
+					  <div class="checkbox">
+					    <label>
+					      <input type="checkbox">I want to learn more about about apps for Global Missions.
+					    </label>
+					  </div>
+
+				  </div>
+				  
+				  <button type="submit" class="btn btn-success">Submit</button>
+				</form>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
 
 	</body>
 </html>
