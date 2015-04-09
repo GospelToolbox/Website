@@ -1,0 +1,10 @@
+module.exports = {
+	mailchimpApiKey: '', // MailChimp API Key
+	mailchimpListId: '', // ID of list to subscribe submitters to
+	messageDestinationEmail: '', // Email address to send contact message to
+
+	errorMessage: "Sorry about this, but we weren't able to deliver your message. Please try again or contact us on twitter.",
+
+	mailgunApiKey: '', // Mailgun API Key
+	mailgunDomain: '' // Mailgun domain
+}
