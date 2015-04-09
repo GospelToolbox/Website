@@ -11,5 +11,14 @@
     "url": "https://github/gospeltoolbox/gospeltoolbox-website.git"
   },
   "author": "Micah Lee <micah@micahlee.com>",
-  "license": "Apache"
+  "license": "Apache",
+  "dependencies": {
+    "body-parser": "^1.12.2",
+    "express": "^4.12.3",
+    "express-handlebars": "^2.0.0",
+    "humanname": "^0.2.2",
+    "mailchimp": "^1.1.0",
+    "mailgun-js": "^0.6.9",
+    "validator": "^3.37.0"
+  }
 }

@@ -1,0 +1,72 @@
+<html>
+	<head>
+		<title>Gospel Toolbox</title>
+		<link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/theme.css">
+
+		<script src="vendor/jquery/dist/jquery.min.js"></script>
+		<script>
+		$(function() {
+		  $('a[href*=#]:not([href=#])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html,body').animate({
+		          scrollTop: target.offset().top
+		        }, 500);
+		        return false;
+		      }
+		    }
+		  });
+		});
+		</script>
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed">
+  			<div class="container-fluid">
+		
+			<div class="navbar-header">
+			 <a class="navbar-brand" href="/">
+		        <img alt="Brand" src="assets/images/LogoCircleRedWhite200.png" style="height:35px">
+		      </a>
+		      </div>
+
+			    <ul class="nav navbar-nav">
+
+			        <li><a href="/#getinvolved" class="btn btn-header">Get Involved</a></li>
+			        <li><a href="/#contactus" class="btn btn-header">Contact Us</a></li>
+			      </ul>
+
+
+ 				<ul class="nav navbar-nav navbar-right">
+			        <li><a href="https://github.com/gospeltoolbox"><img src="assets/images/github.png" style="height: 30px;"></a></li>
+			        <li><a href="https://twitter.com/gospeltoolbox"><img src="assets/images/twitter.png" style="height: 30px;"></a></li>
+			      </ul>
+
+			</div>
+		</nav>
+
+		
+		<div id="thankyou" class="container-fluid page">
+			<div class="row" style="margin-top: 5%;">
+				<div class="col-md-4 col-md-offset-4">
+					<img src="assets/images/LogoThankYou800.png" class="logo-large">
+				</div>
+			</div>
+			<div class="row">
+				<div class="missionstatement col-md-8 col-md-offset-2">
+				<p><strong>Thank you for contacting us!</strong></p>
+				<p>
+				Check us out on <a href="https://github.com/gospeltoolbox"><b>github</b></a> or <a href="https://twitter.com/gospeltoolbox"><b>twitter</b></a> to learn more now.
+				</p>
+			</div>
+			<div class="row" style="margin-top: 5%">
+			
+		</div>
+
+	</div>
+
+	</body>
+</html>

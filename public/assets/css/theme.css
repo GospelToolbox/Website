@@ -40,7 +40,7 @@ body {
 	height: 100%;
 }
 
-#splash {
+#splash, #thankyou {
 	background: black url('../images/hero1.jpg');
 	background-size: cover;
     background-repeat: no-repeat;
@@ -53,7 +53,7 @@ body {
 }
 
 #contactus {
-	background: black url('../images/hero1.jpg');
+	background: black url('../images/hero3.jpg');
 	background-size: cover;
     background-repeat: no-repeat;
 }
@@ -81,9 +81,10 @@ body {
  }
 
  .joinbox > h2 {
- 	margin: 0px;
+ 	margin: 0 0 10px 0;
  	text-align: center;
  }
+
 
  .centered-block {
  	display: inline-block;

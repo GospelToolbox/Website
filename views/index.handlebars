@@ -42,6 +42,7 @@
 
  				<ul class="nav navbar-nav navbar-right">
 			        <li><a href="https://github.com/gospeltoolbox"><img src="assets/images/github.png" style="height: 30px;"></a></li>
+			        <li><a href="https://twitter.com/gospeltoolbox"><img src="assets/images/twitter.png" style="height: 30px;"></a></li>
 			      </ul>
 
 			</div>
@@ -71,21 +72,23 @@
 		<div class="row" style="margin-top: 100px;">
 			<div class="col-md-offset-1 col-md-5" >
 				<div class="joinbox">
-				<h2>Volunteers</h2>
+				<h2>Developers and Creators</h2>
 				<p>
 				Do you have experience in...
 				<ul style="font-weight: bold">
 					<li>Software Engineering</li>
-					<li>Mobile App Development</li>
-					<li>Web App Development</li>
+					<li>Mobile or Web App Development</li>
 					<li>Graphic Design</li>
-					<li>Cybersecurity</li>
+					<li>Cyber Security</li>
 					<li>DevOps</li>
 				</ul>
-				... or any number of other related fields? If so, we could use your help to equip our pastors, missionaries, and churches with the tools they need. 
+				... or any number of other related fields? You can help equip church planters, missionaries, and the church body to be more effective disciples of Christ. Join our community on github to begin contributing, or sign up to find out about Gospel Toolbox meet-ups in your area.
+				</p>
+				<p  class="centered-block">
+				Interested? Let us know using the contact form!
 				</p>
 				<span class="centered-block">
-					<a href="#contactus" class="btn btn-success">Sign Up</a>
+					<a href="#contactus" class="btn btn-success">Contact Us</a>
 				</span>
 				</div>
 			</div>
@@ -93,8 +96,21 @@
 			<div class=" col-md-5">
 				<div class="joinbox">
 					<h2>Church Planters and Missionaries</h2>
+					<p>
+					The most effective tools are built out of experience. Use the lessons you've learned from the field to shape the Gospel Toolbox:
+					<ul>
+						<li><b>Install and try out</b> existing apps and prototypes</b>
+						<li><b>Give feedback</b> on apps or share ideas for new ones</li>
+						<li><b>Be interviewed</b> by our team to help discover new opportunties for technology in ministry</li>
+						<li><b>Serve as an advisor</b> at a Gospel Toolbox meet-up, working side-by-side with developers to build new technology.</li>
+						<li><b>Spread the word</b> to connect others with the Gospel Toolbox
+					</ul>
+					</p>
+					<p class="centered-block">
+					We're always open to new ideas for contributing! Let us know using the contact form.
+					</p>
 					<span class="centered-block">
-						<a href="#contactus" class="btn btn-success">Sign Up</a>
+						<a href="#contactus" class="btn btn-success">Contact Us</a>
 					</span>
 				</div>
 			</div>
@@ -119,48 +135,41 @@
 			<div class="col-md-offset-1 col-md-10">
 				<div class="joinbox">
 				<h2>Contact Us</h2>
+				{{#if args.err}}
+				<p class="bg-danger" style="padding:10px"><b>{{args.err}}</b></p>
+				{{/if}}
 				
-				<form>
+				<form action="/contact" method="post">
 				  <div class="form-group">
-				    <label for="exampleInputEmail1">Email address</label>
-				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+				    <label for="inputName">Name</label>
+				    <input type="text" class="form-control" id="inputName" name="inputName" value="{{args.name}}">
 				  </div>
 				  <div class="form-group">
-				    <label for="exampleInputPassword1">First Name</label>
-				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter First Name">
+				    <label for="inputEmail">Email address</label>
+				    <input type="email" class="form-control" id="inputEmail" name="inputEmail" value="{{args.email}}">
+				  </div>				  
+				  <div class="form-group">
+				    <label for="inputMessage">What are you getting in touch about?</label>
+				    <textarea class="form-control" style="height: 15em" id="inputMessage" name="inputMessage">{{args.message}}</textarea>
 				  </div>
 				  <div class="form-group">
-				    <label for="exampleInputPassword1">Last Name</label>
-				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Last Name">
-				  </div>
-				  <div class="form-group">
-				    <label for="exampleInputPassword1">Message</label>
-				    <textarea class="form-control" placeholder="Enter a message..."></textarea>
-				  </div>
-				  <div class="form-group">
-				    <label for="exampleInputPassword1">Join Our Mailing List...</label>
+				    <label for="exampleInputPassword1">Subscribe to a mailing list...</label>
 
 				    <div class="checkbox">
 					    <label>
-					      <input type="checkbox">I want to learn more about creating apps for the Gospel Toolbox.
+					      <input type="checkbox" name="inputSubscriptions[]" value="contributing" {{#if args.contributing}} checked="checked" {{/if}}>I want to learn more about ways to <b>contribute to Gospel Toolbox.</b>
 					    </label>
 					  </div>
 
 					  <div class="checkbox">
 					    <label>
-					      <input type="checkbox">I want to learn more about apps for Personal Discipleship.
+					      <input type="checkbox" name="inputSubscriptions[]" value="ministryApps" {{#if args.ministryApps}} checked="checked" {{/if}}>I want to learn more about <b>apps for Church Planting and Missions.</b>
 					    </label>
 					  </div>
 
 					  <div class="checkbox">
 					    <label>
-					      <input type="checkbox">I want to learn more about apps for Church Planting.
-					    </label>
-					  </div>
-
-					  <div class="checkbox">
-					    <label>
-					      <input type="checkbox">I want to learn more about about apps for Global Missions.
+					      <input type="checkbox" name="inputSubscriptions[]" value="personalApps" {{#if args.personalApps}} checked="checked" {{/if}}>I want to learn more about <b>apps for Personal Discipleship.</b>
 					    </label>
 					  </div>
 
