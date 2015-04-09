@@ -10,7 +10,7 @@ COPY bower.json /site/bower.json
 COPY public/ /site/public
 COPY views/ /site/views
 
-RUN (CD /site && npm install && npm install bower -g && bower install)
+RUN (cd /site && npm install && npm install bower -g && bower install)
 
 WORKDIR /site
 
