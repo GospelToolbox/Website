@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo docker build -t gospeltoolbox/website:latest /docker/gospeltoolbox/website
+sudo docker build -t gospeltoolbox/website:latest /site
 
-mkdir -p /docker/build
-sudo docker save gospeltoolbox/website:latest > /docker/build/gospeltoolbox-website.tar
+mkdir -p /build
+sudo docker save gospeltoolbox/website:latest > /site/build/gospeltoolbox-website.tar
