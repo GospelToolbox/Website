@@ -6,5 +6,7 @@ module.exports = {
 	errorMessage: "Sorry about this, but we weren't able to deliver your message. Please try again or contact us on twitter.",
 
 	mailgunApiKey: '', // Mailgun API Key
-	mailgunDomain: '' // Mailgun domain
+	mailgunDomain: '', // Mailgun domain
+  
+  recaptchaSecret: '', // ReCaptcha server secret
 }

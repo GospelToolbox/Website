@@ -5,6 +5,7 @@
 		<link rel="stylesheet" href="assets/css/theme.css">
 
 		<script src="vendor/jquery/dist/jquery.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 		<script>
 		$(function() {
 		  $('a[href*=#]:not([href=#])').click(function() {
@@ -174,9 +175,11 @@
 					      <input type="checkbox" name="inputSubscriptions[]" value="personalApps" {{#if args.personalApps}} checked="checked" {{/if}}>I want to learn more about <b>apps for Personal Discipleship.</b>
 					    </label>
 					  </div>
-
-				  </div>
+            
+ 				  </div>
 				  
+          <div class="g-recaptcha" data-sitekey="6Le2gA0TAAAAACQ_oPCfmuB6ZtxnHSD8KQYcQpKI"></div>
+          
 				  <button type="submit" class="btn btn-success">Submit</button>
 				</form>
 
