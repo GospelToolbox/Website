@@ -1,0 +1,68 @@
+baseurl = "http://www.gospeltoolbox.org/"
+languageCode = "en-us"
+title = "Gospel Toolbox"
+theme = "hugo-creative-theme"
+googleAnalytics = ""
+
+[params]
+
+	# You can use Markdown syntax for urls [text](//url.to/source) for
+	# most longer texts.
+
+	# All icons using Fontawesome's icon font. Look at http://fontawesome.io/icons/
+	# for more icons. The icons are represented by their corresponding
+	# CSS class.
+
+	# All projects of the portfolio are defined in their own files.
+	# You can find example projects at 'exampleSite/data/projects'. Copy the 'projects'
+	# folder into the 'data' directory at the root of this Hugo site.
+	# For more information take a look at the README.
+
+	# To provide some metadata for search engines feel free to add some
+	# information about you and your website.
+	name = "Your name"
+	description = "Your description"
+
+	# The path must be relative to the static folder
+	favicon = "favicon.ico"
+
+
+	# Navigation
+	[params.navigation]
+		brand = "Gospel Toolbox"
+
+		[params.navigation.links]
+			about     = "About"
+			services  = "Tools"
+			contact   = "Contact"
+
+
+	# Hero section
+	[params.hero]
+		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
+		slogan     = "Technology innovation. Gospel mission."
+		subtitle   = "Applying technology solutions to to empower church planters to go about their work with purpose and peace."
+		buttonText = "Find out more"
+
+
+	# About section
+	[params.about]
+		headline    = "For the church, by the church!"
+		description = "Gospel Toolbox is a collection of tools and methods, thought up, created, and maintained by members of the local church who spend their time and use their skills to create new tools for the church and missions. "
+		buttonText  = "Get Involved!"
+
+
+	# Service section
+	[params.services]
+		headline = "What's in the toolbox?"
+
+        [[params.services.list]]
+            icon = "fa-book"
+            title = "Seven Arrows"
+            description = "Our templates are updated regularly so they don't break."
+
+      	# Contact section
+	[params.contact]
+		headline = "Let's Get In Touch!"
+		description = "Have an idea for a new tool? What to learn more about how to partner or get involved? Drop us a note and we'll get in touch!"
+		email = "info@gospeltoolbox.org"
