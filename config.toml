@@ -1,4 +1,4 @@
-baseurl = "http://www.gospeltoolbox.org/"
+baseurl = "https://gospeltoolbox.org/"
 languageCode = "en-us"
 title = "Gospel Toolbox"
 theme = "hugo-creative-theme"
