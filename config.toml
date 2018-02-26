@@ -2,7 +2,7 @@ baseurl = "https://gospeltoolbox.org/"
 languageCode = "en-us"
 title = "Gospel Toolbox"
 theme = "hugo-creative-theme"
-googleAnalytics = ""
+googleAnalytics = "UA-61746652-1"
 
 [params]
 
