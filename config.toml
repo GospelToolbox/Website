@@ -41,14 +41,26 @@ googleAnalytics = "UA-61746652-1"
 	[params.hero]
 		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
 		slogan     = "Technology innovation. Gospel mission."
-		subtitle   = "Applying technology solutions to to empower church planters to go about their work with purpose and peace."
+		subtitle   = '''
+Equipping the church to work and serve with greater clarity, productivity, and peace.
+'''
 		buttonText = "Find out more"
 
 
 	# About section
 	[params.about]
 		headline    = "For the church, by the church!"
-		description = "Gospel Toolbox is a collection of tools and methods, thought up, created, and maintained by members of the local church who spend their time and use their skills to create new tools for the church and missions. "
+		description = '''
+Gospel Toolbox exists to support the church in glorifying God
+with gifts and skills in design, software, and technology. 
+The tools in Gospel Toolbox are built by the church to fill 
+the needs and solve practical problems found in daily church work 
+and discipleship. 
+
+Gospel Toolbox supports this work by providing common resources 
+(distribution, hosting, and support), and organizing hackathons
+and other community efforts to collaborate together for this mission.
+'''
 		buttonText  = "Get Involved!"
 
 

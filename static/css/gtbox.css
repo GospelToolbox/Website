@@ -1,0 +1,35 @@
+section.footer {
+  padding: 10px;
+  background: #333;
+  text-align: center;
+
+}
+
+.footer .links {
+  text-align:center;
+  display: inline-block;
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+.footer .links ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer .links li:not(:first-child) {
+  border-left: 1px solid #ccc;
+}
+
+.footer .links li {
+  flex-grow: 1;
+  flex-basis: auto;
+  margin: .25em 0;
+  padding: 0 1em;
+  text-align: center;
+  
+}
+
+.get-involved {
+  padding: 5px;
+}
